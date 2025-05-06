@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中島陽彩 | 自己紹介サイト</title>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      color: #333;
+      background-color: #f0f2f5;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    header {
+      background-color: #2d3436;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #dfe6e9;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 1.8em;
+      color: #0984e3;
+      margin-bottom: 15px;
+      border-left: 5px solid #74b9ff;
+      padding-left: 10px;
+    }
+
+    .profile-card {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      backdrop-filter: blur(8px);
+    }
+
+    .profile-card img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #74b9ff;
+    }
+
+    .profile-info ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .profile-info li {
+      margin-bottom: 8px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      min-height: 380px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #00cec9;
+      margin-bottom: 10px;
+      font-size: 1.3em;
+      min-height: 2.6em;
+    }
+
+    .card p {
+      flex-grow: 1;
+      margin-bottom: 15px;
+      line-height: 1.4em;
+      min-height: 2.8em;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #dfe6e9;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>中島陽彩（ナカシマ ヒイロ）</h1>
+    <p>福井大学 工学部 情報工学コース｜橘研究室</p>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>プロフィール</h2>
+      <div class="profile-card">
+        <img src="自己紹介バレー.jpg" alt="プロフィール画像">
+        <div class="profile-info">
+          <ul>
+            <li><strong>生年月日：</strong>2004年1月20日</li>
+            <li><strong>出身：</strong>岐阜県岐阜市</li>
+            <li><strong>所属：</strong>福井大学 工学部 電気電子情報工学科 情報工学コース</li>
+            <li><strong>研究室：</strong>橘研究室</li>
+            <li><strong>研究テーマ：</strong>未定</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>趣味</h2>
+      <div class="cards">
+
+        <a href="フード/food.html" style="text-decoration: none; color: inherit;">
+          <div class="card">
+            <h3>食べること</h3>
+            <p>肉、魚、ごはん、お酒、スイーツが大好物！</p>
+            <p>辛いものが苦手、、</p>
+            <img src="フード.jpg" alt="料理">
+          </div>
+        </a>
+
+        <a href="ミュージック/music.html" style="text-decoration: none; color: inherit;">
+          <div class="card">
+            <h3>音楽を聴くこと</h3>
+            <p>GADORO、HANA、SKRYU、、、聞いてみてください。</p>
+            <img src="music.jpg" alt="音楽">
+          </div>
+        </a>
+
+        <a href="バレーボール/volleyball.html" style="text-decoration: none; color: inherit;">
+          <div class="card">
+            <h3>バレーボール</h3>
+            <p>するのも見るのも大好きです！</p>
+            <img src="バレーボール①.jpg" alt="バレーボール">
+          </div>
+        </a>
+<!-- 
+        <a href="野球/baseball.html" style="text-decoration: none; color: inherit;">
+          <div class="card">
+            <h3>プロ野球観戦</h3>
+            <p>ジャイアンツファン歴7年です。</p>
+            <img src="フリー野球.webp" alt="プロ野球">
+          </div>
+        </a>
+
+        <a href="ゲーム/game.html" style="text-decoration: none; color: inherit;">
+          <div class="card">
+            <h3>ゲーム</h3>
+            <p>RPGや野球ゲームが好きです！</p>
+            <img src="ゲーム.png" alt="ゲーム">
+          </div>
+        </a>
+-->
+        
+      </div>
+    </section>
+<!-- 
+    <section class="section">
+      <h2>経歴</h2>
+      <ul>
+        <li>岐阜市立本荘小学校</li>
+        <li>岐阜市立本荘中学校</li>
+        <li>岐阜県立加納高等学校</li>
+        <li>福井大学</li>
+      </ul>
+    </section> -->
+  </main>
+
+  <footer>
+    &copy; 2025 中島陽彩 All Rights Reserved.
+  </footer>
+</body>
+</html>
